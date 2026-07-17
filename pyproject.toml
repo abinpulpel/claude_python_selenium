@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-python-selenium"
+version = "1.0.0"
+description = "Reusable, enterprise-grade Python Selenium Page Object Model automation framework."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "Abin Raju" }]
+
+dependencies = [
+    "selenium==4.27.1",
+    "PyYAML==6.0.2",
+    "openpyxl==3.1.5",
+    "webdriver-manager==4.0.2",
+    "python-dotenv==1.0.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==8.3.4",
+    "pytest-xdist==3.6.1",
+    "pytest-html==4.1.1",
+    "pytest-rerunfailures==15.0",
+]
+dev = ["black", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
