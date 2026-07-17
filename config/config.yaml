@@ -1,0 +1,10 @@
+browser: chrome
+headless: false
+implicit_wait: 0
+explicit_wait: 15
+base_url: https://example.com
+screenshot_dir: screenshots
+report_dir: reports
+retry_max_count: 2
+remote_execution: false
+remote_grid_url: http://localhost:4444/wd/hub
