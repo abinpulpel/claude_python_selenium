@@ -1,0 +1,17 @@
+[
+  {
+    "username": "standard_user",
+    "password": "correct_password",
+    "result": "success"
+  },
+  {
+    "username": "standard_user",
+    "password": "wrong_password",
+    "result": "failure"
+  },
+  {
+    "username": "locked_out_user",
+    "password": "correct_password",
+    "result": "failure"
+  }
+]
