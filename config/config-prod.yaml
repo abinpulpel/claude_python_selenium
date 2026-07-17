@@ -1,0 +1,4 @@
+base_url: https://www.example.com
+remote_execution: true
+remote_grid_url: http://selenium-hub:4444/wd/hub
+headless: true
